@@ -121,7 +121,7 @@ const Hero = () => {
                 </div>
 
                 {/*  title + description + button */}
-                <div className="absolute bottom-5 left-5 md:bottom-20 md:left-15 max-w-[55%]">
+                <div className="absolute bottom-5 left-5 md:bottom-12 md:left-15 max-w-[55%]">
                     <h2 className="text-white text-xl md:text-7xl font-black leading-tight tracking-tight mb-1">
                         NIKE AIR MAX
                     </h2>

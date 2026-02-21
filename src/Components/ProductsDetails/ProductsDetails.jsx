@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { FaHeart } from "react-icons/fa";
+import AllProducts from "../AllProducts/AllProducts";
 
 const ProductsDetails = () => {
   const { id } = useParams();
@@ -197,7 +198,10 @@ const ProductsDetails = () => {
           </div>
         </div>
       </div>
+
+       <AllProducts></AllProducts>
     </div>
+
   );
 };
 
