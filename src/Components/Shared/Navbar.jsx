@@ -58,7 +58,7 @@ export default function KicksNavbar() {
   const womenItems = ["Sneakers", "Running", "Lifestyle", "Slides & Sandals", "Accessories"];
 
   return (
-    <div className=" flex flex-col items-center pt-8 px-4 max-w-7xl mx-auto">
+    <div className=" flex flex-col items-center pt-8 md:px-12 px-5 max-w-7xl mx-auto">
       <nav className="w-full  bg-white rounded-2xl shadow-sm px-6 py-6 relative">
 
         {/* ── DESKTOP LAYOUT ── */}

@@ -89,10 +89,10 @@ import thumb2 from "../../../src/assets/thumb2.jpg";
 
 const Hero = () => {
     return (
-        <div className=" px-4 pt-6 pb-10 max-w-7xl mx-auto">
+        <div className=" md:px-12 px-5 pt-6 pb-10 max-w-7xl mx-auto">
 
             {/* ── Heading ── */}
-            <h1 className="font-black leading-none  mb-6 w-full md:text-[199px] text-[58px] text-center">
+            <h1 className="font-black leading-none  mb-6 w-full md:text-[185px] text-[58px] text-center">
                 <span className="text-gray-900">DO IT </span>
                 <span className="text-[#4B6BFB]">RIGHT</span>
             </h1>
