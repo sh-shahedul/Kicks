@@ -5,6 +5,7 @@ import Categories from '../../Components/Catogeries/Categories';
 import Reviews from '../../Components/Reviews/Reviews';
 
 
+
 const Home = () => {
     return (
         <div>
@@ -12,6 +13,7 @@ const Home = () => {
           <Products></Products>
           <Categories></Categories>
           <Reviews></Reviews>
+         
           
         </div>
     );
