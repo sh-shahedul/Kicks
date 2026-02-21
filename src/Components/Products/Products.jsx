@@ -1,29 +1,3 @@
-// import axios from 'axios';
-// import React, { useEffect, useState } from 'react';
-// import ProductsCard from '../ProductsCard/ProductsCard';
-
-// const Products = () => {
-
-//     const [products, setProducts] = useState([]);
-
-//     useEffect(() => {
-//         axios.get('https://api.escuelajs.co/api/v1/products')
-//         .then(res => setProducts(res.data.slice(0,4))) 
-//         .catch(err => console.log(err))
-//     }, [])
-
-//     return (
-//         <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"20px"}}>
-//             {
-//                 products.map(product => (
-//                     <ProductsCard key={product.id} product={product}/>
-//                 ))
-//             }
-//         </div>
-//     );
-// };
-
-// export default Products;
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ProductsCard from '../ProductsCard/ProductsCard';

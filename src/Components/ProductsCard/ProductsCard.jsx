@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const ProductsCard = ({ product }) => {
     const { title, price,  images } = product;
@@ -16,21 +17,21 @@ const ProductsCard = ({ product }) => {
                 <img
                     src={images}
                     alt={title}
-                    className=" w-[300px] md:h-[350px] h-[200px] border-8 border-white object-cover rounded-4xl drop-shadow-lg "
+                    className=" w-[300px] md:h-[350px] h-[200px] border-8 border-white object-cover rounded-4xl  "
                     
                 />
             </div>
 
             {/* Product Title */}
-            <h2 className="md:text-2xl text-lg font-black uppercase text-black leading-tight mt-3 mb-3 px-1 line-clamp-3">
+            <h2 className="md:text-2xl text-lg font-black uppercase text-black leading-tight mt-3 mb-3 px-1 line-clamp-2">
                 {title}
             </h2>
 
             {/* Button */}
-      <button className="w-full bg-[#1a1a1a] hover:bg-[#333] transition-colors duration-200 text-white font-black text-xs uppercase tracking-widest py-3.5 rounded-xl flex items-center justify-center gap-1">
+      <Link to={`/products-details/${product.id}`}  className="w-full bg-[#1a1a1a] hover:bg-[#333] transition-colors duration-200 text-white font-black text-xs uppercase tracking-widest py-3.5 rounded-xl flex items-center justify-center gap-1">
                 View Product -
                 <span className="text-orange-400">${price}</span>
-            </button>
+            </Link>
         </div>
     );
 };

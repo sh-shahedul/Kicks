@@ -12,7 +12,7 @@ const Categories = () => {
     fetch("https://api.escuelajs.co/api/v1/categories")
       .then((res) => res.json())
       .then((data) => {
-        setCategories(data);
+        setCategories(data.slice(1));
         setLoading(false);
       })
       .catch((err) => {
@@ -96,17 +96,14 @@ const Categories = () => {
                 height: isMobile ? "600px" : "600px",
               }}
             >
-              {categories.map((cat, idx) => (
+              {categories.map((cat) => (
                 <div
                   key={cat.id}
                   className="relative shrink-0 group"
                   style={{
                     width: isMobile ? "100%" : "50%",
                     height: isMobile ? "300px" : "600px",
-                    borderRight:
-                      !isMobile && idx < categories.length - 1
-                        ? "2px solid #d8d8d8"
-                        : "none",
+                    
                   }}
                 >
                   {/* Image */}
@@ -119,7 +116,7 @@ const Categories = () => {
                   {/* Bottom label */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
                     <h3
-                      className="text-[#111] text-lg md:text-4xl font-semibold uppercase leading-tight w-[200px]">
+                      className="text-black text-lg md:text-4xl font-semibold uppercase leading-tight w-50">
                       {cat.name}
                     </h3>
                     <button className="w-9 h-9 rounded-lg bg-black text-white flex items-center justify-center hover:bg-[#333] transition-colors shadow-md shrink-0 ml-2">
